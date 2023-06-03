@@ -1,0 +1,45 @@
+body {
+    background-color: gray;
+}
+
+#body {
+    background-color: rgb(88, 24, 24);
+    height: 450px;
+    width: 350px;
+    border: 5px rgb(53, 14, 14) solid;
+    border-radius: 30px;
+}
+#screen {
+    background-color: black;
+    height: 90px;
+    width: 300px;
+    border-radius: 10px;
+    margin-top: 30px;
+    margin-left: 20px;
+    color: aliceblue;
+    font-size:80px;
+    text-align: end;
+}
+#b0, #be, #bd, #b9, #b8, #b7, #b6, #b5, #b4, #b3, #b2, #b1, #bm, #bs, #bD, #ba {
+    height: 65px;
+    width: 65px;
+    border-radius: 50px;
+    background-color: aliceblue;
+    display: inline-block;
+    margin-top: 5px;
+
+}
+#button {
+    margin-top: 15px;
+    margin-left: 0px;
+    text-align: center;
+    font-size: 60px;
+}
+#b0:hover, #be:hover, #bd:hover, #b9:hover, #b8:hover, #b7:hover, #b6:hover, #b5:hover, #b4:hover, #b3:hover, #b2:hover, #b1:hover {
+    height: 65px;
+    width: 65px;
+    border-radius: 50px;
+    background-color: aliceblue;
+    display: inline-block;
+    margin-top: 5px;
+}

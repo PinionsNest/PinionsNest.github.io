@@ -1,0 +1,49 @@
+html {
+    background-image: url("background.gif");
+    background-size: cover;
+    background-position: top;
+}
+body {
+    padding-top: 50px;
+    margin: auto;
+    
+}
+#la {
+    margin-left: 100px;
+}
+#dis {
+    background-image: url("image.png");
+    background-position: center;
+    background-size: cover;
+    margin: auto;
+    width: 376px;
+    height: 220px;
+
+    color: #044caa;
+    font-size: 31px;
+}
+#input {
+    background-color: #3686ee79;
+    border-radius: 5px;
+    border: #0653b8 solid 3px;
+    border-style: dotted;
+    width: 250px;
+}
+#submit {
+    background-color: #3686ee79;
+    border-radius: 3px;
+    border: #0653b8 solid 1px;
+    border-style: solid;
+    size: 50px;
+}
+p {
+    font-size: 50px;
+    font-family: Fantasy;
+    margin: 0px;
+}
+#all {
+    margin-left: -600px;
+}
+#left {
+    color: #044caa;
+}

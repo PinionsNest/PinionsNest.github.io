@@ -1,0 +1,187 @@
+<html><head>
+    <meta charset="UTF-8">
+    <title>Projects | My Portfolio</title>
+    <style>
+      /* CSS styles go here */
+      body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #f0f0f0;
+      }
+      
+      header {
+        background-color: #333;
+        color: #fff;
+        padding: 20px;
+        text-align: center;
+      }
+      
+      .header-container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+      
+      h1 {
+        margin: 0;
+        font-size: 48px;
+        text-transform: uppercase;
+        letter-spacing: 4px;
+      }
+      
+      nav {
+        margin-top: 20px;
+        text-align: center;
+      }
+      
+      .nav-links {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+      }
+      
+      .nav-links li {
+        display: inline-block;
+        margin-right: 10px;
+      }
+      
+      .nav-links a {
+        color: #fff;
+        text-decoration: none;
+        font-size: 18px;
+        transition: color 0.3s ease;
+      }
+      
+      .nav-links a:hover {
+        color: #ff9800;
+      }
+      
+      .container {
+        max-width: 900px;
+        margin: 20px auto;
+        padding: 20px;
+        background-color: #fff;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+      }
+      
+      .project {
+        margin: 20px;
+        padding: 20px;
+        border-radius: 5px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        transition: transform 0.3s ease;
+        position: relative;
+        overflow: hidden;
+        flex: 1 0 300px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+      }
+      
+      .project:hover {
+        transform: translateY(-10px);
+      }
+      
+      .project:before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.5);
+        opacity: 0;
+        transition: opacity 0.3s ease;
+      }
+      
+      .project:hover:before {
+        opacity: 1;
+      }
+      
+      .project h2 {
+        margin-top: 0;
+        font-size: 24px;
+        color: #fff;
+        z-index: 1;
+      }
+      
+      .project p {
+        margin: 10px 0;
+        line-height: 1.5;
+        color: #fff;
+        z-index: 1;
+      }
+      
+      .project img {
+        max-width: 100%;
+        border-radius: 5px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        transition: transform 0.3s ease;
+      }
+      
+      .project:hover img {
+        transform: scale(1.1);
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <div class="header-container">
+        <h1>Projects</h1>
+        <nav>
+          <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+  
+    <div class="container">
+      <div class="project">
+        <img src="project1.jpg" alt="Project 1">
+        <div class="project-details">
+          <h2 class="project-title">Project 1</h2>
+          <p class="project-description">Description of Project 1</p>
+        </div>
+      </div>
+  
+      <div class="project">
+        <img src="project2.jpg" alt="Project 2">
+        <div class="project-details">
+          <h2 class="project-title">Project 2</h2>
+          <p class="project-description">Description of Project 2</p>
+        </div>
+      </div>
+  
+      <!-- Add more projects here -->
+      <div class="project">
+        <img src="project3.jpg" alt="Project 3">
+        <div class="project-details">
+          <h2 class="project-title">Project 3</h2>
+          <p class="project-description">Description of Project 3</p>
+        </div>
+      </div>
+  
+      <!-- Repeat the project div for more projects -->
+      <!-- ... -->
+  
+      <div class="project">
+        <img src="project30.jpg" alt="Project 30">
+        <div class="project-details">
+          <h2 class="project-title">Project 30</h2>
+          <p class="project-description">Description of Project 30</p>
+        </div>
+      </div>
+    </div>
+  
+  
+  </body></html>

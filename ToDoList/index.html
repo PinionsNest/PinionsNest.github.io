@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <title>ToDo List</title>
+    <link rel="stylesheet" type="text/css" href="todo.css" />
+  </head>
+  <body >
+    <button class="y8" style="margin: 10px;" onclick="on()" id="n2">Music: Off</button>
+    <div id="p">
+      <audio id="audio"></audio>
+    </div>
+    <center>
+      <form onsubmit="submitList(event)" style="text-align: center">
+        <label for="listInput">Your todo list here:</label>
+        <input type="text" name="name" id="listInput" required />
+        <input type="submit" value="Submit" />
+      </form>
+      <div>
+        <table id="show">
+          <tr>
+            <th>Status</th>
+            <th>Things To do</th>
+            <th
+              style="background-color: rgba(255, 255, 255, 0); border: 0px"
+            ></th>
+          </tr>
+        </table>
+      </div>
+    </center>
+    <script src="todo.js"></script>
+  </body>
+</html>
