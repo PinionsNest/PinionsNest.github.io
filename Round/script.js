@@ -9,6 +9,10 @@ let button = document.getElementById("c")
 document.body.appendChild(div);
 let numberofvballs = 30;
 
+function move() {
+  centerX = Math.random() * (750 - 550) + 550;
+  centerY = Math.random() * (400 - 200) + 200;
+}
 
 function start() {
     button.remove()
@@ -19,6 +23,7 @@ for (let i = 0; i < numberofvballs; i++) {
   div.appendChild(ball);
   balls.push(ball);
   animate(i);
+  setInterval(move, 1000);
 }
 
 function animate(index) {
@@ -29,3 +34,4 @@ function animate(index) {
   requestAnimationFrame(() => animate(index));
 }
 }
+

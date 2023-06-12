@@ -5,6 +5,7 @@ p {
   position: absolute;
   border: #fff solid 1px;
   border-radius: 50px;
+  transition: all 250ms;
 }
 
 body {
