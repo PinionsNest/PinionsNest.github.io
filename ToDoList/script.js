@@ -29,7 +29,7 @@ function submitList(event) {
 
 
   // Removing border from the delete column.
-  z3.setAttribute("style", "border: 0px; background-color: rgba(252, 249, 249, 0);text-align: left; padding-left: 0px;");
+  z3.setAttribute("style", "background: linear-gradient(to right, #46237a00, #8a4fff00);box-shadow: 0 2px 4px rgba(0, 0, 0, 0.0);text-align:start;");
 
   // Adding new elements into the table tag.
   y.appendChild(z1);
@@ -54,12 +54,12 @@ function submitList(event) {
   //Function to change color according to status.
   function colorChange() {
     if (z1.textContent === "Ongoing...") {
-      z1.setAttribute("style", "background-color: rgba(27, 210, 27, 0.286);");
-      z2.setAttribute("style", "background-color: rgba(27, 210, 27, 0.286);");
+      z1.setAttribute("style", "background: linear-gradient(to right, #46237a00, #8a4fff00);box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);");
+      z2.setAttribute("style", "background: linear-gradient(to right, #46237a00, #8a4fff00);box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);");
       z1.textContent = "Done";
     } else if (z1.textContent === "Done") {
-      z1.setAttribute("style", "background-color: rgba(231, 0, 0, 0.383);");
-      z2.setAttribute("style", "background-color: rgba(231, 0, 0, 0.383);");
+      z1.setAttribute("style", "background: linear-gradient(to right, #46237a, #8a4fff);box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);");
+      z2.setAttribute("style", "background: linear-gradient(to right, #46237a, #8a4fff);box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);");
       z1.textContent = "Ongoing...";
     }
   }

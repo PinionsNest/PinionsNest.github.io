@@ -1,33 +1,43 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-    <title>ToDo List</title>
-    <link rel="stylesheet" type="text/css" href="todo.css" />
-  </head>
-  <body >
-    <button class="y8" style="margin: 10px;" onclick="on()" id="n2">Music: Off</button>
-    <div id="p">
-      <audio id="audio"></audio>
+
+<head>
+  <title>ToDo List</title>
+  <link rel="stylesheet" type="text/css" href="style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+
+<body>
+  <header class="cool-header">
+    <div><i class="logo-icon fas fa-dove"></i><span class="logo-text">PinionNest</span></div>
+    <div class="categories">
+        <a href="#"><i class="fas fa-home" id="home"></i><span class="category-text">Home</span></a>
+        <a href="#"><i class="fas fa-cogs" id="project"></i><span class="category-text">Projects</span></a>
+        <a href="#"><i class="fas fa-envelope" id="contact"></i><span class="category-text">Contact Us</span></a>
+        <a href="#"><i class="fas fa-users" id="about"></i><span class="category-text">About Us</span></a>
     </div>
-    <center>
-      <form onsubmit="submitList(event)" style="text-align: center">
-        <label for="listInput">Your todo list here:</label>
-        <input type="text" name="name" id="listInput" required />
-        <input type="submit" value="Submit" />
-      </form>
-      <div>
-        <table id="show">
-          <tr>
-            <th>Status</th>
-            <th>Things To do</th>
-            <th
-              style="background-color: rgba(255, 255, 255, 0); border: 0px"
-            ></th>
-          </tr>
-        </table>
-      </div>
-    </center>
-    <script src="todo.js"></script>
-  </body>
+</header>
+  <button class="y8" style="margin: 10px;" onclick="on()" id="n2">Music: Off</button>
+  <div id="p">
+    <audio id="audio"></audio>
+  </div>
+  <center>
+    <form onsubmit="submitList(event)" style="text-align: center">
+      <label for="listInput">Your todo list here:</label>
+      <input type="text" name="name" id="listInput" required />
+      <input type="submit" value="Submit" />
+    </form>
+    <div>
+      <table id="show">
+        <tr>
+          <th>Status</th>
+          <th>Things To do</th>
+          <th style="  background: linear-gradient(to right, #46237a00, #8a4fff00); border: 0px;  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.0);"></th>
+        </tr>
+      </table>
+    </div>
+  </center>
+  <script src="script.js"></script>
+</body>
+
 </html>
