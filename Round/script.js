@@ -8,10 +8,12 @@ let div = document.createElement("div");
 let button = document.getElementById("c")
 document.body.appendChild(div);
 let numberofballs = prompt("How many balls do u want? [Number Only]");
+let head = document.getElementById("head");
 
 
 function start() {
-    button.remove()
+    button.remove();
+    head.remove();
 for (let i = 0; i < numberofballs; i++) {
   speed.push((0.001 * numberofballs) - (i * 0.001));
   angle.push(0);
